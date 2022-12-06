@@ -1,0 +1,51 @@
+/* Variables for page style */
+:root {
+  --bgHColor: 20;
+  --bgSColor: 20.4%;
+  --bgLColor: 30.4%;
+  --bgColor: hsl(var(--bgHColor), var(--bgSColor), var(--bgLColor));
+
+  --fgHColor: 35;
+  --fgSColor: 39.6%;
+  --fgLColor: 78.8%;
+  --fgColor: hsl(var(--fgHColor), var(--fgSColor), var(--fgLColor));
+
+  --bgColorDark: hsl(
+    var(--bgHColor),
+    var(--bgSColor),
+    calc(var(--bgLColor) - 5%)
+  );
+}
+
+/* Tags */
+body {
+  background-color: var(--bgColor);
+  color: var(--fgColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(var(--fgHColor), var(--fgSColor), calc(var(--fgLColor) - 20%));
+  /* font-weight: bold; */
+}
+
+footer {
+  background-color: hsl(
+    var(--bgHColor),
+    var(--bgSColor),
+    calc(var(--bgLColor) - 5%)
+  );
+}
+
+.bg-dark {
+  background-color: var(--bgColorDark) !important;
+}
+
+/* 
+● Ett passande och enhetligt färgtema
+● Sidan skall fungera lika bra på mobil som på en vanlig dator. 
+*/
