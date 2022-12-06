@@ -30,7 +30,6 @@ h4,
 h5,
 h6 {
   color: hsl(var(--fgHColor), var(--fgSColor), calc(var(--fgLColor) - 20%));
-  /* font-weight: bold; */
 }
 
 footer {
@@ -41,11 +40,7 @@ footer {
   );
 }
 
+/* Bootstrap override (until SASS is installed) */
 .bg-dark {
   background-color: var(--bgColorDark) !important;
 }
-
-/* 
-● Ett passande och enhetligt färgtema
-● Sidan skall fungera lika bra på mobil som på en vanlig dator. 
-*/
